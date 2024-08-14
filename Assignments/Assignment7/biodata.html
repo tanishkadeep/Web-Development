@@ -1,0 +1,45 @@
+<!-- Write JS code to display the inputs entered by the user in a biodata form. -->
+
+<html>
+  <head></head>
+  <body>
+    <h2>Bio-Data:</h2>
+    <p style="font-weight: bold">
+      Enter the details and submit to display the details:
+    </p>
+
+    <script>
+      function display() {
+        a = document.getElementById("name").value;
+        b = document.getElementById("dob").value;
+        c = document.getElementById("phno").value;
+        d = document.getElementById("address").value;
+        e = document.getElementById("email").value;
+        document.writeln(a);
+        document.writeln(b);
+        document.writeln(c);
+        document.writeln(d);
+        document.writeln(e);
+      }
+    </script>
+
+    <form>
+      Name: <input type="text" id="name" />
+      <br />
+      <br />
+      Date of Birth: <input type="date" id="dob" />
+      <br />
+      <br />
+      Phone Number: <input type="number" id="phno" />
+      <br />
+      <br />
+      Address: <textarea id="address" rows="5" cols="33"></textarea>
+      <br />
+      <br />
+      E-mail: <input type="text" id="email" />
+      <br />
+      <br />
+      <button type="button" onclick="display()">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: seagreen;
+    font-size: 25px;
+}
+
+.container {
+    min-height: 87vh;
+}
+
+header {
+    background-color: seagreen;
+    font-weight: 500;
+    font-size: 23px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+#atb {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gamebox {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    margin: 50px;
+    font-family: 'Finger Paint', sans-serif;
+}
+
+.box {
+    border: 1px solid black;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(235, 245, 240);
+    cursor: pointer;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.btn {
+    padding: 7px 10px;
+    margin: 10px;
+    background-color: seagreen;
+    border: 0;
+    border-radius: 3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#text {
+    margin-top: 20px;
+}
+
+#Tanishka {
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    background-color: rgb(35, 112, 68);
+    color: white;
+    margin-top: 63px;
+    height: 8vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+i {
+    padding-left: 7px;
+}

@@ -1,0 +1,74 @@
+<!-- use of media queries -->
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .menu {
+      float: left;
+      width: 20%;
+      text-align: center;
+    }
+
+    .menu a {
+      background-color: cadetblue;
+      padding: 8px;
+      margin-top: 7px;
+      display: block;
+      width: 100%;
+      color: black;
+    }
+
+    .main {
+      float: left;
+      width: 60%;
+      padding: 0 20px;
+    }
+
+    .right {
+      float: left;
+      background-color: burlywood;
+      width: 20%;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* media queries*/
+    @media only screen and (max-width: 620px) {
+      .menu,
+      .main,
+      .right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body style="font-family: Verdana; color: brown">
+  <div style="background-color: coral; padding: 2px">
+    <h1>Hello</h1>
+  </div>
+  <div style="overflow: auto">
+    <div class="menu">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+    </div>
+    <div class="main">
+      <h2>Main Text</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+        reprehenderit debitis. Magnam dolorem cum fugit corrupti sequi quis
+        ipsum porro consequatur ducimus, officia, minus perferendis adipisci
+        voluptates incidunt facilis omnis?
+      </p>
+    </div>
+    <div class="right">
+      <h2>Description</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+</body>

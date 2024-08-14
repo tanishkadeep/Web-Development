@@ -1,0 +1,35 @@
+<html>
+  <head></head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      function check() {
+        a = parseInt(document.getElementById("n").value);
+
+        switch (a) {
+          case 0:
+            document.writeln("zero");
+            break;
+
+          case 1:
+            document.writeln("one");
+            break;
+
+          case 2:
+            document.writeln("two");
+            break;
+
+          case 3:
+            document.writeln("three");
+            break;
+
+          default:
+            document.writeln("out of range");
+        }
+      }
+    </script>
+
+    <input type="text" id="n" />
+    <button type="button" onclick="check()">Check</button>
+  </body>
+</html>

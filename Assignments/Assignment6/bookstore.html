@@ -1,0 +1,433 @@
+<!-- Design a responsive web page to maintain either of the below
+information.
+1. Book store
+2. Medical Store
+3. Hospital
+4. Hotel Booking
+5. Educational
+6. Sports
+Left Side menu (example book store – Admin, user(checking the
+availability of a book), bill)
+Middle part – Detailed description of the Web page (paras, lists, images,
+pagination)
+Right part- instructions, discounts -->
+
+
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PaperCrest BookStore</title>
+    <style>
+      body { 
+        margin-left: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        background-color: f8edeb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .menu {
+        float: left;
+        width: 20%;
+        padding: 6px;
+        background-color: DBC8AC;
+        margin-top: 0px;
+        align-items: center;
+      }
+      
+      .right {
+        float: left;
+        width: 20%;
+        padding: 6px;
+        overflow: auto;
+        background-color: DBC8AC;
+        color: 660708;
+      }
+
+      .genre {
+        color: c8553d;
+        margin-top: 20px;
+        font-weight: bold;
+        margin-left: 1%;
+        margin-bottom: 20px;
+        font-size: 18px;
+        background-color: eed7c5;
+      }
+
+      button {
+        text-align: center;
+        font-size: 14px;
+        width: 90%;
+        height: 5%;
+        border: none;
+        border-radius: 6px;
+        background-color: b36a5e;
+        color: white;
+        font-family: "Karla", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+      }
+      button:hover {
+        cursor: pointer;
+        opacity: 0.85;
+        box-shadow: 5px 3px 6px rgb(93, 85, 88);
+      }
+
+      .main {
+        float: left;
+        width: 60%;
+        padding: 8px;
+        overflow: auto;
+        padding-top: 0px;
+      }
+
+      .bs {
+        
+        border: 3px solid;
+        padding: 1px;
+        display: block;
+        margin-left: 25%;
+        margin-top: 5px;
+        border-color: 220901;
+      }
+
+      .new {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .wild {
+        font-size: 14px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 100;
+        text-align: justify;
+        color: 99582a;
+        line-height: 18px;
+      }
+
+      .gen {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        margin-top: 8px;
+        text-decoration: underline;
+        padding-left: 3px;
+        color: 660708;
+        text-align: center;
+      }
+
+      .pc {
+        width: 90px;
+        border: solid 1px;
+        border-color: 231942;
+        display: block;
+        margin: auto;
+      }
+
+      .bill{
+        font-family: Arial; font-size: 15px; text-align: center; background-color: rgb(245, 237, 238); padding: 5px; border-radius: 6px;
+        width: 80%;
+        margin: auto;
+      }
+      .hbill{
+            color: white;
+            background-color: b36a5e;
+            border-radius: 6px;
+            text-align: center;
+            padding-bottom: 4px;
+            margin-top: 25px;
+            margin-bottom: 0px;
+      }
+      .cart{
+        color: white;
+            background-color: b36a5e;
+            border-radius: 6px;
+            text-align: center;
+            padding-bottom: 4px;
+            margin-top: 25px;
+            margin-bottom: 0px;
+      }
+
+      .tfios{
+        margin-top: 0px; font-weight: bold; text-align: center
+      }
+      .av {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: 231942;
+      }
+
+      .hr {
+        margin-top: 30px;
+      }
+
+      ul {
+        margin-left: -1em;
+        margin-bottom: 100px;
+      }
+
+
+      .pagination {
+        display: inline-block;
+      }
+
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 15px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+        border-radius: 3px;
+      }
+
+      .pagination a.active {
+        background-color: c44536;
+        color: white;
+        border: 1px solid c44536;
+      }
+
+      .pagination a:hover:not(.active) {
+        background-color: #ddd;
+      }
+
+      .pagination a.active {
+        background-color: c44536;
+        color: white;
+        border: none;
+      }
+
+      .pagination a:hover:not(.active) {
+        background-color: rgb(219, 213, 213);
+      }
+      .center {
+        text-align: center;
+      }
+
+      h1{
+        font-size: 4vw;
+        text-align: center;
+        color: white;
+        background-color: bc4749;
+        border-radius: 7px;
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 3px;
+      }
+  
+      @media only screen and (max-width: 500px) {
+        /* for tablets */
+
+        .menu,
+        .main,
+        .right {
+          width: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 300px) {
+        /* for mobile phone */
+
+        .menu,
+        .main,
+        .right {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      PaperCrest BookStore &#174;
+    </h1>
+
+    <div style="overflow: auto">
+      <div class="menu">
+        <button>Sign In</button>
+        <h3 style="text-align: center">EXPLORE GENRES-</h3>
+        <div class="gen">Romance</div>
+        <div class="gen">Horror</div>
+        <div class="gen">Thriller</div>
+        <div class="gen">True Crime</div>
+        <div class="gen">Adventure</div>
+        <div class="gen">Comedy</div>
+        <div class="gen">Motivational</div>
+        <div class="gen">Mystery</div>
+        <div class="gen">Mythological</div>
+        <hr class="hr" color="black" size="3" />
+        <p class="av">
+          Check for Pincode:
+          <br />
+        </p>
+        <input type="number" class="pc" />
+        <hr class="hr" color="black" size="3" />
+
+        <h3 class="cart">
+          Cart:
+        </h3>
+        <br />
+        <p class="tfios">
+          &#10003; The Fault in our Stars
+        </p>
+      </div>
+
+      <div class="main">
+        <img src="bk.jpg" width="50%" class="bs" />
+        <p class="new">
+          <img src="book.png" width="20px" style="float: left" />
+          &#160; <u>BEST-SELLERS</u> :
+        </p>
+        <div class="genre">Adventure</div>
+        <div class="wild">
+          <img
+            src="wild.jpg"
+            width="8%"
+            style="float: left; margin-right: 10px"
+          />
+          The Call of the Wild is a short adventure novel by Jack London,
+          published in 1903 and set in Yukon, Canada, during the 1890s Klondike
+          Gold Rush, when strong sled dogs were in high demand. The central
+          character of the novel is a dog named Buck. The story opens at a ranch
+          in Santa Clara Valley, California, when Buck is stolen from his home
+          and sold into service as a sled dog in Alaska. He becomes
+          progressively more primitive and wild in the harsh environment, where
+          he is forced to fight to survive and dominate other dogs. By the end,
+          he sheds the veneer of civilization, and relies on primordial instinct
+          and learned experience to emerge as a leader in the wild.London spent
+          almost a year in the Yukon, and his observations form much of the
+          material for the book. The story was serialized in The Saturday
+          Evening Post in the summer of 1903 and was published later that year
+          in book form. The book's great popularity and success made a
+          reputation for London. As early as 1923, the story was adapted to
+          film, and it has since seen several more cinematic adaptations. The story opens in 1897 with Buck, a powerful 140-pound St. Bernard Scotch Shepherd mix,[1][2] happily living in California's Santa Clara Valley as the pampered pet of Judge Miller and his family. One night, assistant gardener Manuel, needing money to pay off gambling debts, steals Buck and sells him to a stranger. Buck is shipped to Seattle, where he is confined in a crate, starved, and ill-treated. When released, Buck attacks his handler, the "man in the red sweater" who teaches Buck the "law of club and fang", sufficiently cowing him. The man shows some kindness after Buck demonstrates obedience.
+        </div>
+
+        <div class="genre">Romantic</div>
+        <div class="wild">
+          <img
+            src="call.jpg"
+            width="8%"
+            style="float: left; margin-right: 10px"
+          />
+          Call Me by Your Name is a 2007 coming-of-age novel by American writer
+          André Aciman that centers on a blossoming romantic relationship
+          between an intellectually precocious, curious, and pretentious
+          17-year-old American-Italian Jewish boy named Elio Perlman and a
+          visiting 24-year-old American Jewish scholar named Oliver in 1980s
+          Italy. The novel chronicles their summer romance and the 20 years that
+          follow. A sequel to the novel, Find Me, was released in October
+          2019.The narrator, Elio Perlman, recalls the events of the summer of
+          about 1983, when he was seventeen and living with his parents in
+          Italy. Each summer, his parents would take in a doctoral student as a
+          house guest for six weeks, who would revise a book manuscript while
+          assisting his father with academic paperwork. Elio resents the
+          tradition, as it requires him to vacate his bedroom so the guest can
+          use it for the duration of their stay. Oliver, the guest for the summer, is carefree and detached—a stark contrast to Elio's introversion. Elio selected Oliver as a guest in the hopes of "instant affinities" between them and acts as his tour guide, though Elio's attempts to impress Oliver are met with indifference. Though Elio recognizes his attraction to Oliver—he is particularly excited by his discovery that Oliver is Jewish, seeing it as a bond between them—he doubts that Oliver reciprocates his feelings.
+          Call Me by Your Name received widespread acclaim from literary critics, with review aggregator Book Marks reporting zero negative and zero mixed reviews among 10 total, indicating "rave" reviews.[1]
+
+          Reviewing for The New York Times, Stacey D'Erasmo called the novel "an exceptionally beautiful book".[2] Writing in The New Yorker, Cynthia Zarin said, "Aciman’s first novel shows him to be an acute grammarian of desire".[3] In The Washington Post, Charles Kaiser said, "If you have ever been the willing victim of obsessive love—a force greater than yourself that pulls you inextricably toward the object of your desire—you will recognize every nuance of André Aciman's superb new novel, Call Me by Your Name."
+        </div>
+
+        <div class="genre">Horror</div>
+        <div class="wild">
+          <img
+            src="horror.jpg"
+            width="8%"
+            style="float: left; margin-right: 10px"
+          />
+          The Haunting of Hill House is a 1959 gothic horror novel by American
+          author Shirley Jackson. A finalist for the National Book Award and
+          considered one of the best literary ghost stories published during the
+          20th century,[1] it has been made into two feature films and a play,
+          and is the basis of a Netflix series. Jackson's novel relies on terror
+          rather than horror to elicit emotion in the reader, using complex
+          relationships between the mysterious events in the house and the
+          characters' psyches.The author decided to write "a ghost story" after
+          reading about a group of nineteenth century "psychic researchers" who
+          studied a house and somberly reported their supposedly scientific
+          findings to the Society for Psychic Research. What Jackson discovered
+          in their "dry reports was not the story of a haunted house, it was the
+          story of several earnest, I believe misguided, certainly determined
+          people, with their differing motivations and background." Excited by
+          the prospect of creating her own haunted house and the characters to
+          explore it, she launched into research. She later claimed to have found a picture in a magazine of a California house she believed was suitably haunted-looking. She asked her mother, who lived in California, to help find information about the dwelling. According to Jackson, her mother identified the house as one the author's own great-great-grandfather, an architect who had designed some of San Francisco's oldest buildings, had built. Jackson also read volume upon volume of traditional ghost stories while preparing to write her own, "No one can get into a novel about a haunted house without hitting the subject of reality head-on; either I have to believe in ghosts, which I do, or I have to write another kind of novel altogether."
+        </div>
+
+        <div class="genre">Thriller</div>
+        <div class="wild">
+          <img
+            src="thrill.jpg"
+            width="8%"
+            style="float: left; margin-right: 10px"
+          />
+          The Silent Patient is a 2019 psychological thriller novel written by
+          British Cypriot author Alex Michaelides. The debut novel was published
+          by Celadon Books, a division of Macmillan Publishers, on 5 February
+          2019. The audiobook version, released on the same date, is read by
+          Louise Brealey and Jack Hawkins.[1] The story is narrated by an
+          English psychotherapist, Theo Faber, dealing with a patient who turns
+          mute after murdering her husband. Upon its release, the book debuted
+          on The New York Times Best Seller list at No.1. It later won the
+          Goodreads Choice Award 2019 in the Mystery and Thriller category. On
+          writing his debut novel, author Michaelides, who is also a
+          screenwriter, said, "I was feeling very disillusioned as a
+          screenwriter. I kept seeing scripts being mangled in the production
+          and this sense of frustration made me decide to sit down and finally
+          write a novel." He rewrote the draft around 50 times before finalizing
+          it. The Athenian tragedy Alcestis, by Euripides, served as an
+          inspiration for the plot, while its narrative structure was influenced
+          by Agatha Christie's writing. Michaelides decided to set his novel in
+          a psychiatric unit as he had worked at a secure psychiatric facility
+          for teenagers while he was a psychotherapy student. The novel received generally positive reviews from critics. The Independent lauded the book for its plot, characters and style, writing: "[the book is] vivid enough to warrant devouring it in a day ... the writing is scalpel-sharp and uncluttered, the style spare and concise, uncrowded with extraneous detail."[6] The Guardian concurred, praising its "tight, uncluttered prose" and "skillful building [of] tension until the novel's shocking denouement". Deccan Herald called it "an intelligent plot coupled with an interesting character study, and finally the impactful punch that leaves you flabbergasted." The Washington Post praised the plot as "fresh" but criticised its "hacky horror tropes, trite scenes and comically shifty red herring characters." Another negative review came from Kirkus Reviews, who panned the book as "clumsy, contrived, and silly ... with a twist savvy readers will see coming from a mile away.
+        </div>
+
+        <div class="center" style="margin-top: 30px;">
+          <div class="pagination">
+            <a href="#">&laquo</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            
+            <a href="#">&raquo;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="right">
+        <h3 style="color: 621708">Discounts and Offers:</h3>
+        <ul>
+          <li>$7.50 cashback on ICICI Credit Card. T&C.</li>
+          <li>
+            15% Instant Discount up to $4.75 on ICICI Bank Credit Card
+            Non-EMI Trxn.
+          </li>
+          <li>For Prime members: Get 5% instant discount.</li>
+        </ul>
+        <h3 class="hbill">
+          Bill:
+        </h3>
+        <br />
+      
+      <div class="bill">
+        
+        <div>Item subtotal: $21.56</div>
+        <div>Shipping Charges: $1.00</div>
+        <div>Discount: -$2.00</div>
+        <hr color="black" size="2" style="margin-top: 5px; width: 80%;"/>
+        <div style="font-size: 17px; font-weight: bold; margin-bottom: 5px;">Amount: $20.56 </div>
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    color: white;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+header {
+    font-size: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.945);
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px 10px 30px;
+}
+
+header .left {
+    font-family: 'Caprasimo', cursive;
+    font-size: 2.4rem;
+}
+
+header .left:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.navbar li {
+    display: inline;
+    padding: 0px 15px 0px 15px;
+    margin: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar li a:hover {
+    color: rgb(169, 169, 169);
+    border-bottom: rgb(169, 169, 169) solid 4px;
+}
+
+.main {
+    background-image: url(images/car.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 820px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.desc {
+    font-size: 1.2em;
+    width: 40%;
+}
+
+.text-style {
+    font-weight: lighter;
+    font-style: italic;
+    color: rgb(236, 236, 236);
+}
+
+#features {
+    display: grid;
+    padding: 10px 70px 60px;
+    gap: 15px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 7em repeat(2, 1fr);
+    text-align: center;
+}
+
+#features .ff {
+    grid-column: 1/4;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+    align-self: center;
+    text-decoration: underline;
+}
+
+.f-div {
+    font-size: 18px;
+    padding: 20px;
+    background-color: rgb(18, 18, 18);
+    border-radius: 5px;
+    color: rgb(236, 236, 236);
+}
+
+.heading {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#book {
+    background-color: rgb(36, 36, 36);
+    padding: 20px;
+    text-align: center;
+    font-size: 17px;
+}
+
+#book-head {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+input {
+    border: 0 2px solid rgb(194, 191, 191);
+    background: transparent;
+    color: white;
+    margin: 10px 7px;
+    outline: none;
+    border-right: 0;
+}
+
+button {
+    padding: 5px;
+    width: 250px;
+    font-size: 18px;
+    margin: 20px;
+    background-color: rgb(170, 170, 170);
+    border: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(122, 122, 122);
+}
+
+footer {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    font-size: 20px;
+}
+
+i {
+    padding: 0 7px;
+    color: white;
+}
+
+i:hover {
+    cursor: pointer;
+    color: rgb(165, 165, 165);
+}
+
+#Tanishka {
+    text-align: center;
+    font-size: 18;
+    font-weight: bolder;
+    padding: 20px;
+    background-color: rgb(67, 83, 69);
+}
+
+
+@media only screen and (max-width: 850px) {
+    #features {
+        grid-template-rows: 7em repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #features .ff {
+        grid-column: 1/3;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        padding: 7px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #features .ff {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header div {
+        padding-top: 20px;
+    }
+
+    .main {
+        height: 650px;
+    }
+
+    .desc {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        background-image: none;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        background-color: rgb(84, 84, 84);
+        justify-content: start;
+    }
+
+    .main-img {
+        background-image: url(images/car.jpg);
+        height: 400px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .name {
+        font-size: 4em;
+        padding-top: 20px;
+    }
+
+    .desc {
+        font-size: 1.2em;
+        width: 100%;
+        padding: 15px;
+    }
+
+}

@@ -1,0 +1,135 @@
+<!-- Create a web page to create a form that includes tables and user
+interface components such as text boxes, text areas, buttons, check
+boxes and combo box. -->
+
+<html>
+  <title>Student Registeration</title>
+  <body style="background-color: rgb(246, 231, 245)">
+    <img src="msrit.png" />
+    <br />
+    <h2 align="center"><u>STUDENT REGISTERATION FORM</u></h2>
+    <form>
+      <h3>Personal Details:</h3>
+      Student Name: <input type="text" name="stuname" /> <br /><br />
+      Date of Birth: <input type="date" name="dob" /> <br /><br />
+      Phone Number: <input type="number" name="phno" /> <br /><br />
+      Address: <textarea name="address" rows="5" cols="33"></textarea>
+      <br /><br />
+      E-mail: <input type="text" name="email" />
+      <br />
+      <br />
+
+      <h3>Academic Details:</h3>
+      USN: <input type="text" name="usn" placeholder="1MS21XXXXX" />
+      <br />
+      <br />
+      Semester:
+      <select name="semester">
+        <option value="1">Ist</option>
+        <option value="2">IInd</option>
+        <option value="3">IIIrd</option>
+        <option value="4">IVth</option>
+        <option value="5">Vth</option>
+        <option value="6">VIth</option>
+        <option value="7">VIIth</option>
+        <option value="8">VIIIth</option>
+      </select>
+      <br />
+      <br />
+      Department: <br />
+      <input type="radio" name="branch" value="cs" />CSE<br />
+      <input type="radio" name="branch" value="is" />ISE<br />
+      <input type="radio" name="branch" value="aiml" />AI&ML<br />
+      <input type="radio" name="branch" value="aids" />AI&DS<br />
+      <input type="radio" name="branch" value="cy" />CSE(CY)<br />
+      <input type="radio" name="branch" value="ci" />CSE(AI&ML)<br />
+      <input type="radio" name="branch" value="ec" />ECE<br />
+      <input type="radio" name="branch" value="ee" />EEE<br />
+      <input type="radio" name="branch" value="ei" />EIE<br />
+      <input type="radio" name="branch" value="et" />ETE<br />
+      <input type="radio" name="branch" value="ch" />CHE<br />
+      <input type="radio" name="branch" value="cv" />CVE<br />
+      <input type="radio" name="branch" value="me" />ME<br />
+      <input type="radio" name="branch" value="bt" />BT<br />
+      <br />
+      <h3>Subject Registeration:</h3>
+      <table border="4">
+        <thead>
+          <tr>
+            <th><b>S. no.</b></th>
+            <th><b>Subject Code</b></th>
+            <th><b>Subject Name</b></th>
+            <th><b>Credits</b></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><input type="number" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Fee Details:</h3>
+
+      <input type="checkbox" value="Yes" name="fees" /> I have paid the fees.<br /><br />
+      Amount Paid:
+      <input
+        type="number"
+        name="Amount"
+        placeholder="Amount in Rs."
+      /><br /><br />
+      Date of Payment: <input type="date" name="dop" /><br /><br />
+      Reference Number: <input type="number" name="ref" /><br /><br />
+
+      <p>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!-- 1. Write JS code to compute factorial of a given number and display
+the same in alert box. -->
+
+<html>
+  <head></head>
+  <body>
+    <h2>Factorial of a number:</h2>
+    <p>Enter a number to get its factorial:</p>
+
+    <p id="demo"></p>
+    <script>
+      function fact(a) {
+        a = parseInt(document.getElementById("n").value);
+
+        fact = 1;
+        for (i = 1; i <= a; i++) {
+          fact = fact * i;
+        }
+
+        alert(fact);
+      }
+    </script>
+
+    <input type="text" id="n" />
+    <button type="button" onclick="fact()">Factorial</button>
+  </body>
+</html>

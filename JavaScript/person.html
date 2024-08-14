@@ -1,0 +1,26 @@
+<body>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+
+  <script>
+    const person = {
+      name: "Sumana",
+      lastname: "M",
+      age: "28",
+      profession: "engineer",
+    };
+    const person2 = {
+      name: "XYZ",
+      age: "29",
+      id: "20415",
+      lastname: "AB",
+      fullname: function () {
+        return person.name + " " + person.lastname;
+      },
+    };
+    document.getElementById("demo").innerHTML =
+      "Person Details " + person.name + " of age " + person.age;
+    document.getElementById("demo1").innerHTML =
+      "Person Details " + person2.fullname() + " of age " + person2.age;
+  </script>
+</body>

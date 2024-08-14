@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+#menu {
+  float: left;
+  width: 20%;
+  margin-left: 2px;
+  font-weight: bold;
+  margin-top: -8px;
+  background-color: rgba(217, 240, 232, 0.892);
+  padding: 8px;
+  padding-top: 0px;
+  border-radius: 4px;
+}
+
+.info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: center;
+}
+
+#main {
+  float: left;
+  width: 75%;
+  padding: 20px;
+  overflow: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  #menu,
+  #main {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #menu,
+  #main {
+    width: 100%;
+  }
+}
+
+.container {
+  margin-top: -1.4em;
+  overflow: auto;
+}
+
+ul {
+  margin-left: -1.5em;
+  color: rgb(63, 112, 114);
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#h {
+  font-size: 4vw;
+  color: white;
+  border-radius: 7px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: #067c86;
+  margin-top: 17px;
+}
+
+button {
+  padding: 10px;
+  font-size: 15px;
+  width: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  background-color: #24a99c;
+  margin: auto;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+button:active {
+  border: black solid 1px;
+}
+
+#btn4 {
+  width: 180px;
+}
+
+#input {
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+#p1,
+#p2,
+#p3,
+#p4 {
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  font-weight: bold;
+  color: #10282e;
+}
+
+#info1 {
+  margin-top: -7em;
+}
+#info2 {
+  margin-top: -5em;
+}
+#info3 {
+  margin-top: -3em;
+}

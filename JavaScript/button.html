@@ -1,0 +1,32 @@
+<body>
+  <p id="demo"><button onclick="person1()">Person 1</button></p>
+
+  <p id="demo1"><button onclick="person2()">Person 2</button></p>
+
+  <script>
+    function person1() {
+      const person = {
+        name: "Tanishka",
+        lastname: "Deep",
+        age: "28",
+        profession: "engineer",
+      };
+      document.getElementById("demo").innerHTML =
+        "Person Details " + person.name + " of age " + person.age;
+    }
+    function person2() {
+      const person2 = {
+        name: "XYZ",
+        age: "29",
+        id: "20415",
+        lastname: "AB",
+        fullname: function () {
+          return this.name + " " + this.lastname;
+        },
+      };
+
+      document.getElementById("demo1").innerHTML =
+        "Person Details " + person2.fullname() + " of age " + person2.age;
+    }
+  </script>
+</body>

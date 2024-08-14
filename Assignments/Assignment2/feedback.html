@@ -1,0 +1,378 @@
+<!-- Create a feedback form to enable students to give their feedback regarding the teacher  -->
+
+
+<html>
+    <title>Feedback Form</title>
+    <body style="background-color:rgb(215, 235, 222);">
+    <form>
+        <h2 align="center"><font color="darkblue">FEEDBACK FORM</font></h2>
+        Please give the feedback about the faculty and courses by selecting the appropriate option against each faculty name for every question. 
+        We appreciate your time and effort!
+        <br>
+        <br>
+        <hr size="2" width="100%" color="black">
+
+        <h3><u>Student Details:</u></h3>
+            Student Name: <input type="text" name="stuname">
+            <br>
+            <br>
+            USN: <input type="text" name="usn" placeholder="1MS21XXXXX">
+            <br>
+            <br>
+            Semester: 
+            <select name="semester">
+                <option value="1">Ist</option>
+                <option value="2">IInd</option>
+                <option value="3">IIIrd</option>
+                <option value="4">IVth</option>
+                <option value="5">Vth</option>
+                <option value="6">VIth</option>
+                <option value="7">VIIth</option>
+                <option value="8">VIIIth</option>
+            </select>
+            <br>
+            <br>
+            Department:
+            <select name="department">
+                <option value="1">CSE</option>
+                <option value="2">ISE</option>
+                <option value="3">AI&ML</option>
+                <option value="4">AI&DS</option>
+                <option value="5">ECE</option>
+                <option value="6">EE</option>
+                <option value="7">ME</option>
+                <option value="8">CV</option>
+            </select>
+            <br>
+            <br>
+
+            <hr size="2" width="100%" color="black">
+
+            <h3><u>Feedback:</h3></u></h3>
+        
+        <table border="4" cellpadding="20" bgcolor="white">
+            <thead>
+                <tr>
+                    <th>Questions</th>
+                    <th>Faculty</th>
+                    <th>Rate</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+            <ul>
+                <tr>
+                    <td rowspan="5"><li><strong>Is the teacher punctual for the class?</strong></li></td>
+                    <td>MM</td>
+                    <td>
+                        <input type="radio" name="Punctual" value="1"> everyday   <br>          
+                        <input type="radio" name="Punctual" value="2"> almost everyday  <br>              
+                        <input type="radio" name="Punctual" value="3"> sometimes<br>              
+                        <input type="radio" name="Punctual" value="4"> rarely<br>              
+                        <input type="radio" name="Punctual" value="5"> never<br>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>GBV</td>
+                    <td><input type="radio" name="Punctual" value="1"> everyday   <br>          
+                        <input type="radio" name="Punctual" value="2"> almost everyday  <br>              
+                        <input type="radio" name="Punctual" value="3"> sometimes<br>              
+                        <input type="radio" name="Punctual" value="4"> rarely<br>              
+                        <input type="radio" name="Punctual" value="5"> never<br></td>
+                </tr>
+                <tr>
+                    <td>JK</td>
+                    <td><input type="radio" name="Punctual" value="1"> everyday   <br>          
+                        <input type="radio" name="Punctual" value="2"> almost everyday  <br>              
+                        <input type="radio" name="Punctual" value="3"> sometimes<br>              
+                        <input type="radio" name="Punctual" value="4"> rarely<br>              
+                        <input type="radio" name="Punctual" value="5"> never<br></td>
+                </tr>
+                <tr>
+                    <td>AKG</td>
+                    <td><input type="radio" name="Punctual" value="1"> everyday   <br>          
+                        <input type="radio" name="Punctual" value="2"> almost everyday  <br>              
+                        <input type="radio" name="Punctual" value="3"> sometimes<br>              
+                        <input type="radio" name="Punctual" value="4"> rarely<br>              
+                        <input type="radio" name="Punctual" value="5"> never<br></td>
+                </tr>
+                <tr>
+                    <td>RT</td>
+                    <td><input type="radio" name="Punctual" value="1"> everyday   <br>          
+                        <input type="radio" name="Punctual" value="2"> almost everyday  <br>              
+                        <input type="radio" name="Punctual" value="3"> sometimes<br>              
+                        <input type="radio" name="Punctual" value="4"> rarely<br>              
+                        <input type="radio" name="Punctual" value="5"> never<br></td>
+                </tr>
+
+
+
+                <tr>
+                    <td rowspan="5"><li><b>How does the teacher explain the topic?</b></li></td>
+                    <td>MM</td>
+                    <td>
+                        <input type="radio" name="Explain" value="1"> excellent   <br>          
+                        <input type="radio" name="Explain" value="2"> good  <br>              
+                        <input type="radio" name="Explain" value="3"> average<br>              
+                        <input type="radio" name="Explain" value="4"> bad<br>              
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>GBV</td>
+                    <td>
+                        <input type="radio" name="Explain" value="1"> excellent   <br>          
+                        <input type="radio" name="Explain" value="2"> good  <br>              
+                        <input type="radio" name="Explain" value="3"> average<br>              
+                        <input type="radio" name="Explain" value="4"> bad<br>              
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>JK</td>
+                    <td>
+                        <input type="radio" name="Explain" value="1"> excellent   <br>          
+                        <input type="radio" name="Explain" value="2"> good  <br>              
+                        <input type="radio" name="Explain" value="3"> average<br>              
+                        <input type="radio" name="Explain" value="4"> bad<br>              
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>AKG</td>
+                    <td>
+                        <input type="radio" name="Explain" value="1"> excellent   <br>          
+                        <input type="radio" name="Explain" value="2"> good  <br>              
+                        <input type="radio" name="Explain" value="3"> average<br>              
+                        <input type="radio" name="Explain" value="4"> bad<br>              
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>RT</td>
+                    <td>
+                        <input type="radio" name="Explain" value="1"> excellent   <br>          
+                        <input type="radio" name="Explain" value="2"> good  <br>              
+                        <input type="radio" name="Explain" value="3"> average<br>              
+                        <input type="radio" name="Explain" value="4"> bad<br>              
+                        
+                    </td>
+                </tr>
+
+
+
+
+                <tr>
+                    <td rowspan="5"><li><b>Does the teacher motivate you?</b></li></td>
+                    <td>MM</td>
+                    <td>
+                        <input type="radio" name="motivate" value="1"> always   <br>          
+                        <input type="radio" name="motivate" value="2"> mostly  <br>              
+                        <input type="radio" name="motivate" value="3"> sometimes<br>              
+                        <input type="radio" name="motivate" value="4"> rarely<br>              
+                        <input type="radio" name="motivate" value="5"> never<br>              
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>GBV</td>
+                    <td>
+                        <input type="radio" name="motivate" value="1"> always   <br>          
+                        <input type="radio" name="motivate" value="2"> mostly  <br>              
+                        <input type="radio" name="motivate" value="3"> sometimes<br>              
+                        <input type="radio" name="motivate" value="4"> rarely<br>              
+                        <input type="radio" name="motivate" value="5"> never<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JK</td>
+                    <td>
+                        <input type="radio" name="motivate" value="1"> always   <br>          
+                        <input type="radio" name="motivate" value="2"> mostly  <br>              
+                        <input type="radio" name="motivate" value="3"> sometimes<br>              
+                        <input type="radio" name="motivate" value="4"> rarely<br>              
+                        <input type="radio" name="motivate" value="5"> never<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AKG</td>
+                    <td>
+                        <input type="radio" name="motivate" value="1"> always   <br>          
+                        <input type="radio" name="motivate" value="2"> mostly  <br>              
+                        <input type="radio" name="motivate" value="3"> sometimes<br>              
+                        <input type="radio" name="motivate" value="4"> rarely<br>              
+                        <input type="radio" name="motivate" value="5"> never<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>RT</td>
+                    <td>
+                        <input type="radio" name="motivate" value="1"> always   <br>          
+                        <input type="radio" name="motivate" value="2"> mostly  <br>              
+                        <input type="radio" name="motivate" value="3"> sometimes<br>              
+                        <input type="radio" name="motivate" value="4"> rarely<br>              
+                        <input type="radio" name="motivate" value="5"> never<br>
+                    </td>
+                </tr>
+
+
+
+
+
+                <tr>
+                    <td rowspan="5"><li><b>Is the teacher partial?</b></li></td>
+                    <td>MM</td>
+                    <td>
+                        <input type="radio" name="partial" value="1"> always   <br>          
+                        <input type="radio" name="partial" value="2"> mostly  <br>              
+                        <input type="radio" name="partial" value="3"> sometimes<br>              
+                        <input type="radio" name="partial" value="4"> rarely<br>              
+                        <input type="radio" name="partial" value="5"> never<br>              
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>GBV</td>
+                    <td>
+                        <input type="radio" name="partial" value="1"> always   <br>          
+                        <input type="radio" name="partial" value="2"> mostly  <br>              
+                        <input type="radio" name="partial" value="3"> sometimes<br>              
+                        <input type="radio" name="partial" value="4"> rarely<br>              
+                        <input type="radio" name="partial" value="5"> never<br>    
+                    </td>
+                </tr>
+                <tr>
+                    <td>JK</td>
+                    <td>
+                        <input type="radio" name="partial" value="1"> always   <br>          
+                        <input type="radio" name="partial" value="2"> mostly  <br>              
+                        <input type="radio" name="partial" value="3"> sometimes<br>              
+                        <input type="radio" name="partial" value="4"> rarely<br>              
+                        <input type="radio" name="partial" value="5"> never<br>    
+                    </td>
+                </tr>
+                <tr>
+                    <td>AKG</td>
+                    <td>
+                        <input type="radio" name="partial" value="1"> always   <br>          
+                        <input type="radio" name="partial" value="2"> mostly  <br>              
+                        <input type="radio" name="partial" value="3"> sometimes<br>              
+                        <input type="radio" name="partial" value="4"> rarely<br>              
+                        <input type="radio" name="partial" value="5"> never<br>    
+                    </td>
+                </tr>
+                <tr>
+                    <td>RT</td>
+                    <td>
+                        <input type="radio" name="partial" value="1"> always   <br>          
+                        <input type="radio" name="partial" value="2"> mostly  <br>              
+                        <input type="radio" name="partial" value="3"> sometimes<br>              
+                        <input type="radio" name="partial" value="4"> rarely<br>              
+                        <input type="radio" name="partial" value="5"> never<br>    
+                    </td>
+                </tr>
+
+
+
+
+
+                <tr>
+                    <td rowspan="5"><li><b>Does the teacher solve doubts?</b></li></td>
+                    <td>MM</td>
+                    <td>
+                        <input type="radio" name="doubt" value="1"> always   <br>          
+                        <input type="radio" name="doubt" value="2"> mostly  <br>              
+                        <input type="radio" name="doubt" value="3"> sometimes<br>              
+                        <input type="radio" name="doubt" value="4"> rarely<br>              
+                        <input type="radio" name="doubt" value="5"> never<br>              
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>GBV</td>
+                    <td>
+                        <input type="radio" name="doubt" value="1"> always   <br>          
+                        <input type="radio" name="doubt" value="2"> mostly  <br>              
+                        <input type="radio" name="doubt" value="3"> sometimes<br>              
+                        <input type="radio" name="doubt" value="4"> rarely<br>              
+                        <input type="radio" name="doubt" value="5"> never<br> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>JK</td>
+                    <td>
+                        <input type="radio" name="doubt" value="1"> always   <br>          
+                        <input type="radio" name="doubt" value="2"> mostly  <br>              
+                        <input type="radio" name="doubt" value="3"> sometimes<br>              
+                        <input type="radio" name="doubt" value="4"> rarely<br>              
+                        <input type="radio" name="doubt" value="5"> never<br> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>AKG</td>
+                    <td>
+                        <input type="radio" name="doubt" value="1"> always   <br>          
+                        <input type="radio" name="doubt" value="2"> mostly  <br>              
+                        <input type="radio" name="doubt" value="3"> sometimes<br>              
+                        <input type="radio" name="doubt" value="4"> rarely<br>              
+                        <input type="radio" name="doubt" value="5"> never<br> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>RT</td>
+                    <td>
+                        <input type="radio" name="doubt" value="1"> always   <br>          
+                        <input type="radio" name="doubt" value="2"> mostly  <br>              
+                        <input type="radio" name="doubt" value="3"> sometimes<br>              
+                        <input type="radio" name="doubt" value="4"> rarely<br>              
+                        <input type="radio" name="doubt" value="5"> never<br> 
+                    </td>
+                </tr>
+            </ul>
+            </tbody>
+    </table>
+
+        <br>
+        <br>
+        
+        
+        <ol>
+            <li><b>
+                Select the courses for which you think the syllabus is vast:</b><br><br>
+                <input type="checkbox" name="syl" value="ma"> Advanced Calculus <br>
+                <input type="checkbox" name="syl" value="py"> Physics <br>
+                <input type="checkbox" name="syl" value="cy"> Chemistry <br>
+                <input type="checkbox" name="syl" value="ec"> Basic Electronics <br>
+                <input type="checkbox" name="syl" value="ee"> Basic Electrical <br>
+                <input type="checkbox" name="syl" value="cv"> Basics of Civil Engineering <br>
+                <input type="checkbox" name="syl" value="fom"> Fundamentals of Mechanical Engineering <br>
+                <input type="checkbox" name="syl" value="foc"> Fundamentals of C Programming <br>
+            </li>
+            <br>
+            <li>
+                <b>What other course can be added to the curriculum?</b><br><br>
+                <input type="text" name="courses">
+            </li>
+            <br>
+            <li>
+                <b>Any other suggestions?</b><br><br> 
+                <textarea name="sugg"
+                rows="5" cols="33"></textarea>
+            <br>
+            
+            </li>
+        </ol>
+        <hr size="2" width="100%" color="black">
+        <br>
+        <p align="center">
+            <input type="Submit" value="submit">     
+            
+            <input type="Reset" value="reset">
+        </p>
+        <br>
+    </form>
+        
+        
+    </body>
+</html>

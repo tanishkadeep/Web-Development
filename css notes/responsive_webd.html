@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- essential for responsive web dev -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .menu {
+        float: left;
+        width: 20%;
+        /* padding: 5px; */
+        /* height and width in % for resp */
+      }
+
+      .menuitem {
+        color: rgb(63, 112, 114);
+        padding: 5px;
+        font-weight: bold;
+      }
+
+      .main {
+        float: left;
+        width: 60%;
+        padding: 20px;
+        overflow: auto;
+      }
+
+      .right {
+        float: left;
+        width: 20%;
+        padding: 5px;
+        overflow: auto;
+        background-color: rgb(212, 212, 161);
+      }
+
+      @media only screen and (max-width: 800px) {
+        /* for tablets */
+
+        .main {
+          width: 80%;
+          padding: 0px;
+        }
+
+        .right {
+          width: 10%;
+        }
+
+        .menu {
+          width: 10%;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        /* for mobile phone */
+
+        .menu,
+        .main,
+        .right {
+          width: 100%;
+        }
+      }
+    </style>
+    <title>responsive web dev</title>
+  </head>
+  <body style="font-family: Verdana">
+    <h1 style="font-size: 10vw">Responsive Text</h1>
+    <!-- view port width -->
+    <p style="font-size: 5vw">
+      Resize the browser window to see how text size changes
+    </p>
+
+    <div style="overflow: auto">
+      <div class="menu">
+        <div class="menuitem">The Illusion</div>
+        <div class="menuitem">The Change</div>
+        <div class="menuitem">The Viewport</div>
+      </div>
+      <div class="main">
+        <h2>The Illusion in Life</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste delectus
+          necessitatibus omnis unde quam dolores excepturi sit architecto?
+          Repudiandae ratione, commodi cum illo magni at eius explicabo aliquam
+          nobis laborum! Lorem ipsum dolor sitgfh, amet consectetur adipisicing
+          elit. Magnam numquam ad modi, nulla accusantium, laborum sequi a, ut
+          quam vel eligendi optio. Sunt id porro quaerat voluptatum quam earum
+          voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Nam eveniet cumque odit alias, placeat amet fugiat, distinctio eaque
+          officia perspiciatis maiores, necessitatibus dolorem et dicta
+          inventore aliquam illum porro voluptatum! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Expedita natus ex fuga. Dignissimos
+          magnam, omnis, quae culpa quaerat atque, reiciendis beatae aspernatur
+          quis provident quos doloribus illo facilis ratione? Nemo.
+        </p>
+        <img src="image.jpg" style="width: 100%" />
+      </div>
+
+      <div class="right">
+        <h2>Right side of the main</h2>
+        <p>Right view</p>
+      </div>
+    </div>
+  </body>
+</html>

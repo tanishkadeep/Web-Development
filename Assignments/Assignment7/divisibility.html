@@ -1,0 +1,91 @@
+<!-- Write JS code to determine if a given number is divisible by
+3,4,5,6,7,8 or 9 using switch. -->
+
+<html>
+  <head>
+    <style>
+      * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      h2 {
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: rgb(34, 34, 130);
+      }
+
+      p {
+        font-weight: bold;
+        color: rgb(144, 133, 21);
+      }
+
+      button {
+        padding: 8px 12px;
+        font-weight: bold;
+        background-color: rgb(57, 131, 148);
+        color: white;
+        border-radius: 5px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Divisibility Test:</h2>
+    <p>Enter a number to check its divisibility by any number from 3 to 9.</p>
+
+    <script>
+      function check() {
+        a = parseInt(document.getElementById("num").value);
+        d = parseInt(document.getElementById("div").value);
+
+        switch (d) {
+          case 3:
+            if (a % 3 == 0) document.writeln("Yes it is divisible by 3 ");
+            else document.writeln("No it is not divisible by 3 ");
+            break;
+
+          case 4:
+            if (a % 4 == 0) document.writeln("Yes it is divisible by 4 ");
+            else document.writeln("No it is not divisible by 4 ");
+            break;
+
+          case 5:
+            if (a % 5 == 0) document.writeln("Yes it is divisible by 5 ");
+            else document.writeln("No it is not divisible by 5 ");
+            break;
+
+          case 6:
+            if (a % 6 == 0) document.writeln("Yes it is divisible by 6 ");
+            else document.writeln("No it is not divisible by 6 ");
+            break;
+
+          case 7:
+            if (a % 7 == 0) document.writeln("Yes it is divisible by 7 ");
+            else document.writeln("No it is not divisible by 7 ");
+            break;
+
+          case 8:
+            if (a % 8 == 0) document.writeln("Yes it is divisible by 8 ");
+            else document.writeln("No it is not divisible by 8 ");
+            break;
+
+          case 9:
+            if (a % 9 == 0) document.writeln("Yes it is divisible by 9 ");
+            else document.writeln("No it is not divisible by 9 ");
+            break;
+
+          default:
+            document.writeln("out of range");
+        }
+      }
+    </script>
+
+    Enter the number to check divisibility:
+    <input type="number" id="num" /> <br />
+    <br />
+    Enter the divisor:
+    <input type="number" id="div" /> <br /><br />
+    <button type="button" onclick="check()">Check</button>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .main{
+            background-color: rgb(43, 43, 189);
+            padding: 20px;
+            display: grid;
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
+            justify-content: center;
+        }
+        
+        .box{
+            background-color: rgb(200, 229, 255);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+        
+        .container{
+            background-color: rgb(232, 201, 236);
+            padding: 30px 70px;
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "sidebar column1 column1"
+            "sidebar column2 column3"
+            "footer footer footer"
+            ;
+        }
+        
+        .item{
+            background-color: #fff;
+            padding: 20px;
+            margin: 5px;
+        }
+        
+        #header{
+            grid-area: header;
+        }
+        #sidebar{
+            grid-area: sidebar;
+            height: 500px;
+        }
+        #col1{
+            grid-area: column1;
+        }
+        #col2{
+            grid-area: column2;
+        }
+        #col3{
+            grid-area: column3;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+    </div>
+
+    <div class="container">
+        <div class="item" id="header">header</div>
+        <div class="item" id="sidebar">sidebar</div>
+        <div class="item" id="col1">column 1</div>
+        <div class="item" id="col2">column 2</div>
+        <div class="item" id="col3">column 3</div>
+        <div class="item" id="footer">footer</div>
+    </div>
+</body>
+</html>

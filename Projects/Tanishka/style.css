@@ -1,0 +1,19 @@
+* {
+    color: white;
+}
+
+#Tanishka {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+    background-color: rgb(67, 83, 69);
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    padding-right: 5px;
+}

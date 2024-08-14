@@ -1,0 +1,31 @@
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    columns: 3;
+    column-gap: 40px;
+    text-align: justify;
+    column-rule: solid 2px black;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.p5 {
+    padding: 25px;
+}
+
+h2 {
+    column-span: all;
+    /* this breaks the columns to put the text in middle */
+    text-align: center;
+}
+
+/* this doesnot allow the 3 dash to break out while minimizing the window size */
+span {
+    white-space: nowrap;
+}

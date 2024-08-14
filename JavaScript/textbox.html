@@ -1,0 +1,40 @@
+<html>
+  <head>
+    Focus on text box
+  </head>
+  <body style="margin-left: 40px; margin-top: 40px">
+    <h2 id="heading" ondblclick="fun()">Double click here</h2>
+    <input type="text" id="input" onfocus="focusevent()" />
+    <button id="btn">Click</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+      function focusevent() {
+        document.getElementById("input").style.background = "aqua";
+      }
+
+      function fun() {
+        document.getElementById("heading").innerHTML = "Welcome";
+        document.getElementById("input").value = "Hello";
+      }
+
+      function f1() {
+        alert("Welcome to java button clicks");
+      }
+
+      function f2() {
+        document.getElementById("p1").innerHTML = "Mouse over event";
+      }
+
+      function f3() {
+        document.getElementById("p2").innerHTML = "Mouse out event";
+      }
+
+      var mybtn = document.getElementById("btn");
+      mybtn.addEventListener("click", f1);
+      mybtn.addEventListener("mouseover", f2);
+      mybtn.addEventListener("mouseout", f3);
+    </script>
+  </body>
+</html>

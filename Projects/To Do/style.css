@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    font-size: 18px;
+    min-height: 90vh;
+    background: linear-gradient(135deg, rgb(10, 10, 111), rgb(82, 12, 82));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(24, 21, 44);
+}
+
+.main {
+    background-color: white;
+    border-radius: 7px;
+    padding: 25px 35px;
+    width: 600px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+i {
+    padding-left: 10px;
+}
+
+#add {
+    background-color: #e3e3e3;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#inp,
+#btn {
+    border: none;
+}
+
+#inp {
+    background-color: transparent;
+    outline: none;
+    overflow: hidden;
+    padding: 12px 20px;
+    width: 80%;
+}
+
+#btn {
+    padding: 12px 35px;
+    border-radius: 40px;
+    background-color: #ff5f4d;
+    color: white;
+    font-weight: 600;
+}
+
+#btn:hover {
+    background-color: #f06253;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+li div {
+    width: 80%;
+}
+
+li i {
+    padding: 4px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+li.checked div {
+    text-decoration: line-through;
+    color: #3c3c3c;
+}
+
+.fa-circle {
+    color: #c6c5c5;
+}
+
+.fa-circle-check {
+    color: #ff5f4d;
+}
+
+@media only screen and (max-width: 800px) {
+    .main {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .main {
+        font-size: 20px;
+        max-width: 250px;
+    }
+
+    #add {
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    #inp {
+        background-color: #e3e3e3;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    #btn {
+        font-size: 12px;
+        padding: 10px 22px;
+    }
+
+    li {
+        font-size: 0.8em;
+    }
+
+    li i {
+        padding-top: 0;
+    }
+}
+
+#Tanishka {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 20px;
+    background-color: #151415;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    padding-right: 10px;
+}

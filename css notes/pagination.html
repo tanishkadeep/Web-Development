@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>pagination</title>
+  <link rel="stylesheet" href="pagination.css" />
+  <style>
+    .pagination {
+      display: inline-block;
+    }
+
+    .pagination a {
+      color: black;
+      float: left;
+      padding: 16px;
+      text-decoration: navy;
+      margin: 0.7em;
+    }
+
+    .pagination a:active {
+      background-color: rgb(90, 221, 105);
+      color: white;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    /* .pagination a:hover:not(.active) {
+  background-color: rgb(203, 40, 40);
+} */
+
+    .description {
+      column-count: 3;
+      column-gap: 40px;
+      column-rule-style: solid;
+      column-rule-width: 2px;
+      column-rule-color: blueviolet;
+      line-height: 20px;
+      width: 700px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="description">
+    People who create websites and web applications for a living, are called
+    Front-End Developers. Tip: Many Front-End Developers also have basic
+    knowledge of different CSS and JavaScript frameworks and libraries, like
+    Bootstrap, SASS (CSS pre-processor), jQuery and React, and the popular
+    version control system, Git.People who create websites and web
+    applications for a living, are called Front-End Developers. Tip: Many
+    Front-End Developers also have basic knowledge of different CSS and
+    JavaScript frameworks and libraries, like Bootstrap, SASS (CSS
+    pre-processor), jQuery and React, and the popular version control system,
+    Git.
+  </div>
+  <div class="center">
+    <div class="pagination">
+      <a href="#">&laquo</a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">&raquo;</a>
+    </div>
+  </div>
+</body>
+
+</html>

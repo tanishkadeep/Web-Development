@@ -1,0 +1,18 @@
+<body>
+  <script>
+    function onkeyupfn() {
+      var x = document.getElementById("fname");
+      x.value = x.value.toUpperCase();
+    }
+
+    function confirm() {
+      fname = document.getElementById("fname");
+      alert("Hello " + fname.value + " You are connected to gmail.com");
+    }
+  </script>
+  <p>Function to transform content in a text to uppercase</p>
+  <form onsubmit="confirm()" action="http://www.gmail.com">
+    Enter you name: <input type="text" id="fname" onkeyup="onkeyupfn()" />
+    <input type="submit" />
+  </form>
+</body>

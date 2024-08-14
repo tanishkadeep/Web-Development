@@ -1,0 +1,35 @@
+<html>
+  <head></head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      function check() {
+        a = document.getElementById("n").value;
+
+        // if (a % 2 == 0) document.getElementById("demo").innerHTML = "Even";
+        // else document.getElementById("demo").innerHTML = "Odd";
+
+        if (a % 2 == 0) alert("Even");
+        else alert("Odd");
+      }
+
+      function num() {
+        a = document.getElementById("n").value;
+
+        // while loop-
+        // i = 1;
+        // while (i <= a) {
+        //   document.writeln(i);
+        //   i = i + 1;
+
+        for (i = 1; i <= a; i++) {
+          document.writeln(i);
+        }
+      }
+    </script>
+
+    <input type="text" id="n" />
+    <button type="button" onclick="check()">Check</button>
+    <button type="button" onclick="num()">Number</button>
+  </body>
+</html>

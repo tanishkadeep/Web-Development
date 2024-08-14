@@ -1,0 +1,65 @@
+<!-- Design a responsive web page to include text boxes for entering
+2 numbers and buttons (factorial, prime, Fibonacci, Natural
+Numbers). Display alert box and change the background of the text
+box when the user focuses onto the text box. Also, Display the name
+of the button when user moves over the buttons. When the button is
+clicked, perform the required computation and print the result in the
+web page. Create 3 programs for front end, styling and back end. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment 10</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="h">Assignment 10</h1>
+
+      <div id="menu">
+        <p class="info">This page can do the following:</p>
+        <ul>
+          <li class="menuitem">
+            Calculate the factorial of the entered number
+          </li>
+          <li class="menuitem">Check if the entered number is prime or not</li>
+          <li class="menuitem">
+            Display those many terms of the fibonacci sequence
+          </li>
+          <li class="menuitem">
+            Display natural numbers upto the entered number
+          </li>
+        </ul>
+      </div>
+
+      <div id="main">
+        Enter number:
+        <br />
+        <input type="text" id="input" onfocus="focusevent()" />
+        <br />
+
+        <button id="btn1">Factorial</button>
+        <br />
+        <button id="btn2">Prime</button>
+        <br />
+        <button id="btn3">Fibonacci</button>
+        <br />
+        <button id="btn4">Natural Number</button>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+
+        <p id="info1"></p>
+        <p id="info2"></p>
+        <p id="info3"></p>
+        <p id="info4"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

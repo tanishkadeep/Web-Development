@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.left,
+.right {
+  height: 30vw;
+  width: 30vw;
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+
+.left {
+  float: left;
+  margin-right: 20px;
+}
+
+.right {
+  float: right;
+  margin-left: 20px;
+}
+
+p {
+  padding: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+section {
+  background-color: bisque;
+  /* display: flow-root;  
+  or */
+  overflow: auto;
+}

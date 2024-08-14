@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main {
+        width: 100vw;
+        height: 100vh;
+        background-color: beige;
+        border: 10px solid black;
+      }
+
+      .box {
+        width: 300px;
+        height: 100px;
+        background-color: rgb(77, 38, 38);
+        border-radius: 10px;
+        margin: 20px;
+        position: relative;
+        animation-name: toRight;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        /*animation-timing-function: cubic-bezier(0, 1.67, 0.89, -0.3);*/
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes toRight {
+        from {
+          top: 0;
+          left: 0;
+        }
+
+        to {
+          top: 0;
+          left: 1150px;
+        }
+      }
+      #circle {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        border-radius: 50px;
+        margin: 10px;
+        position: relative;
+        top: 30%;
+        left: 40%;
+        animation: 7s ease-in-out 0s infinite alternate-reverse none running
+          circleMovement;
+      }
+      @keyframes circleMovement {
+        0% {
+          top: 1%;
+          left: 5%;
+        }
+        30% {
+          top: 5%;
+          left: 90%;
+        }
+
+        60% {
+          top: 50%;
+          left: 10%;
+        }
+        100% {
+          top: 55%;
+          left: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box"></div>
+      <div id="circle"></div>
+    </div>
+  </body>
+</html>

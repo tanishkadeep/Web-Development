@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.3em;
+}
+
+header{
+    text-align: right;
+    padding: 25px 40px;
+}
+
+.fa-bars{
+    font-size: 35px;
+}
+
+i{
+    cursor: pointer;
+}
+
+#content{
+    padding: 60px 120px;
+    height: 100vh;
+}
+
+p, h1{
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+#sidebar{
+    padding: 20px 40px;
+    /* width: 400px; */
+    width: 0;
+    overflow: hidden;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    transition: width ease 4s;
+}
+
+#head{
+    display: flex;
+    font-size: 40px;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    cursor: pointer;
+    padding: 10px;
+}
+
+ul li:hover{
+    background-color: aliceblue;
+}
+
+#socials i{
+    padding: 0 20px;
+    font-size: 1.3em;
+}
+
+#socials{
+    text-align: center;
+    margin-top: 40px;
+}
